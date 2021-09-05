@@ -1,8 +1,8 @@
 {
-  "name": "nv-webblog-client",
+  "name": "nv-webblog",
   "version": "1.0.0",
-  "description": "nosdjs vuejs webblog client",
-  "author": "satiphon pramanee",
+  "description": "A Vue.js project",
+  "author": "yves <satiphonp62@nu.ac.th>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -13,7 +13,10 @@
     "axios": "^0.21.1",
     "vue": "^2.5.2",
     "vue-resource": "^1.5.3",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4",
+    "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
