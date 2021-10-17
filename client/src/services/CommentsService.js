@@ -1,20 +1,20 @@
 import Api from '@/services/Api'
-import comment from '../../../server/src/models/comment'
+
 
 export default {
     index () {
         return Api().get('comments')
     },
-    show (blogId) {
+    show (commentId) {
         return Api().get('comment/' + commentId)
     },
-    post (blog) {
+    post (comment) {
         return Api().post('comment', comment)
     },
-    put (blog) {
+    put (comment) {
         return Api().put('comment/' + cooment.id, comment)
     },
-    delete (blog) {
+    delete (comment) {
         return Api().delete('comment/' + comment.id, comment)
     },
 }

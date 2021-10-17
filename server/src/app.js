@@ -1,18 +1,21 @@
 let express = require('express')
 let bodyParser = require('body-parser')
 let cors = require('cors')
+let  multer = require("multer")
 const {sequelize} = require('./models')
 
 const config = require('./config/config')
-
 const app = express()
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(cors())
 
+
 require('./userPassport')
 require('./routes')(app)
+
+app.use('/assets', express.static('public'))
 
 app.get('/status', function (req, res ){
   res.send('Hello nodejs server')

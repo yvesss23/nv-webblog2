@@ -20,4 +20,10 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.fade-ennter-active, .fade-leave-active{
+  transition: opacity 0.5s;
+}
+.fade-enter-to{
+  opacity: 1;
+}
 </style>
